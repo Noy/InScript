@@ -1,0 +1,35 @@
+New programming language notes (InScript)
+
+
+<identifier>:
+ - First char is a letter, any proceeding chars are letters or numbers.
+
+<type>:
+ - A primitive type: string, int, bool, etc.
+
+<value>:
+ - Either an identifier (for a variable) or a literal (1, "Hello", true)
+
+Class declaration:
+
+`class <identifier>`
+
+Method declaration:
+
+`method <identifier> requires ([<identifier = type> <identifier = name>...]) [returns <type>]`
+
+Variable Declaration:
+
+`var <type> <identifier = name> [= <value>]`
+
+Print statement:
+
+`print <value>`
+
+Method Invocation
+
+`<identifier = name([<value>...]>`
+
+Return Statement:
+
+`return <value>`

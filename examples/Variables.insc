@@ -1,0 +1,11 @@
+class Variables
+
+    method main requires ()
+        var string str = getString()
+        printString(str)
+
+    method printString requires (string str)
+        print str
+
+    method getString requires () returns string
+        return "Hey!"
