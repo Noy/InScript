@@ -13,4 +13,4 @@ import java.util.regex.Pattern;
 public class TokenData {
     private Pattern pattern;
     private TokenType type;
-}//test
+}
