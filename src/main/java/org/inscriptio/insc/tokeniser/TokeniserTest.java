@@ -14,7 +14,6 @@ public class TokeniserTest {
 
         while (tokeniser.hasNextToken()) {
             System.out.println(tokeniser.nextToken().getToken());
-        }
-    }
+        } }
 
 }
