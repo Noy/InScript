@@ -15,6 +15,9 @@ public enum TokenType {
     STRING_LITERAL,
 
     /** A Number */
-    INTEGER_LITERAL
+    INTEGER_LITERAL,
+
+    /** Nothing. */
+    EMPTY
 
 }
