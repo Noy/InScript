@@ -1,10 +1,10 @@
 class Variables
 
-    method main requires ()
+    method main requires () returns void
         var string str = getString()
         printString(str)
 
-    method printString requires (string str)
+    method printString requires (string str) returns void
         print str
 
     method getString requires () returns string

@@ -1,6 +1,6 @@
 package org.inscriptio.insc.parser;
 
-import org.inscriptio.insc.Block;
+import org.inscriptio.insc.block.Block;
 import org.inscriptio.insc.tokeniser.Tokeniser;
 
 /**

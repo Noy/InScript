@@ -1,4 +1,4 @@
-package org.inscriptio.insc;
+package org.inscriptio.insc.block;
 
 /**
  * Created by noy on 15/05/2017.

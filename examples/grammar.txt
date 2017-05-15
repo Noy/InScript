@@ -16,7 +16,7 @@ Class declaration:
 
 Method declaration:
 
-`method <identifier> requires ([<identifier = type> <identifier = name>...]) [returns <type>]`
+`method <identifier> requires ([<type> <identifier = name>...]) returns <type>`
 
 Variable Declaration:
 
