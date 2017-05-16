@@ -9,6 +9,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Value {
-    private Type type;
+    private Type builtInType;
     private Object value;
 }

@@ -1,7 +1,8 @@
 package org.inscriptio.insc.parser;
 
+import org.inscriptio.insc.BuiltInType;
 import org.inscriptio.insc.Parameter;
-import org.inscriptio.insc.Type;
+import org.inscriptio.insc.BuiltInType;
 import org.inscriptio.insc.block.Block;
 import org.inscriptio.insc.block.Method;
 import org.inscriptio.insc.tokeniser.Token;
@@ -47,7 +48,7 @@ public class MethodParser extends Parser<Method> {
                 }
                 else {
                     paramData[1] = token.getToken();
-                    params.add(new Parameter(Type.valueOf(paramData[0].toUpperCase()), paramData[1]));
+                    params.add(new Parameter(BuiltInType.valueOf(paramData[0].toUpperCase()), paramData[1]));
                     paramData = new String[2];
                 }
             }
@@ -55,9 +56,9 @@ public class MethodParser extends Parser<Method> {
 
         tokeniser.nextToken(); // skips returns
 
-        Type returnType = Type.valueOf(tokeniser.nextToken().getToken().toUpperCase());
+        String returnBuiltInType = tokeniser.nextToken().getToken(); //  BuiltInType.valueOf(tokeniser.nextToken().getToken().toUpperCase());
 
-        return new Method(superBlock, name, returnType, params.toArray(new Parameter[params.size()]));
+        return new Method(superBlock, name, returnBuiltInType, params.toArray(new Parameter[params.size()]));
 
     }
 }

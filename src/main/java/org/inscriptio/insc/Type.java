@@ -1,13 +1,17 @@
 package org.inscriptio.insc;
 
 /**
- * Represents a variable type
+ * Created by noy on 16/05/2017.
  */
-public enum Type {
+public interface Type {
 
-
-    // For now
-    STRING,
-    INEGER
+    static Type match(String str) {
+        try {
+            return BuiltInType.valueOf(str.toUpperCase());
+        } catch (Exception e) {
+            //TODO: match str to a call
+            return null;
+        }
+    }
 
 }

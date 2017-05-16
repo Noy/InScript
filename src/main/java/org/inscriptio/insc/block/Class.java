@@ -5,11 +5,12 @@ package org.inscriptio.insc.block;
  */
 
 import lombok.Getter;
+import org.inscriptio.insc.Type;
 
 /**
  * Represents a class instance!
  */
-public final class Class extends Block {
+public final class Class extends Block implements Type {
 
     @Getter private String name;
 
